@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.colorpicker.HelloController">
+   <center>
+      <Pane fx:id="tela" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <GridPane gridLinesVisible="true" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="541.0" minWidth="10.0" prefWidth="541.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="59.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="31.4" minHeight="0.0" prefHeight="28.4" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.8" minHeight="10.0" prefHeight="26.799999999999994" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="29.599999999999994" minHeight="22.599999999999994" prefHeight="23.599999999999994" />
+        </rowConstraints>
+         <children>
+            <Label text="Red:" />
+            <Label text="Green:" GridPane.rowIndex="1" />
+            <Label text="Blue:" GridPane.rowIndex="2" />
+            <Label fx:id="rValue" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: red;" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Label fx:id="gValue" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: green;" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Label fx:id="bValue" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: blue;" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Slider fx:id="red" max="255.0" maxWidth="1.7976931348623157E308" onMouseReleased="#onSliderDrop" GridPane.hgrow="ALWAYS">
+               <GridPane.margin>
+                  <Insets left="45.0" />
+               </GridPane.margin>
+            </Slider>
+            <Slider fx:id="green" max="255.0" maxWidth="1.7976931348623157E308" onMouseReleased="#onSliderDrop" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="45.0" />
+               </GridPane.margin>
+            </Slider>
+            <Slider fx:id="blue" max="255.0" maxWidth="1.7976931348623157E308" onMouseReleased="#onSliderDrop" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="45.0" />
+               </GridPane.margin>
+            </Slider>
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>

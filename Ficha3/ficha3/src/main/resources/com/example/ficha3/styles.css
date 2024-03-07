@@ -1,0 +1,11 @@
+.text-area .content{
+  -fx-background-color: #FFFFDD;
+  -fx-text-alignment: justify;
+}
+
+.text-field 
+{
+  -fx-text-fill: yellow;
+  -fx-background-color: black;
+  -fx-border-color: yellow;
+}

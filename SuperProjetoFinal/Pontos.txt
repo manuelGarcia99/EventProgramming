@@ -1,0 +1,59 @@
+1. Limpar o código (apagar o desnecessaário se houver medo pôr todos os comentários no fim da Start.java)  v
+2. Começar a organizar tudo v
+3. Pôr mais eventos com condições nas coisas v
+4. Há algo de novo é tratado como um evento v
+5. Modificar a função onClickCompletar para só fazer algo caso estejamos a pôr um barco v
+6. Terminar de colocar os barcos ou os quadrados(agora apenas cores) v
+7. Acrescentar a classe Barco.java um barco tem que ter número de casas destruídas número de casas
+ainda vivas número total de casas e uma lista de tuplos (triplos)(x,y,true-vivo/false-abatido) 
+e um caracter final que guarda o tipo de barco v
+8. Modificar a função evento para instanciar os barcos v
+9. Na função evento verificar se o barco ja foi colocado e no caso de ja ter sido não deixar que seja v
+10. Guardar  a lista dos barcos v
+11. Criar view de jogador 2 e fazer com que ele coloque os barcos v 
+12. Criar um controlador BatalhaJogadorA.java v
+13. Criar um tabuleiro.fxml v
+14. No ficheiro pôr uma tabela e um botão que diz Atacar. v
+15. Criar uma ArrayList que recebe tuplos (duplos) das posições que já foram atacadas v
+16. Receber os barcos do A e do B v
+17. Criar a função initialize para BatalhaJogadorA.java v
+18. Os barcos devem ter a sua inicial ou segunda letra como texto da Label a azul e Capitalizada para os podermos distinguir e devem estar a branco com border preta isto faz-se nos gets v
+19. Se o inimigo nos tiver acertado num barco deve ficar de cor vermelha com a letra a preto v
+20. Se o barco estiver todo destruido deve ficar a roxo e as letras devem desaparecer e a sua imageView deve desaparecer v
+21. Se o inimigo falhar deve ficar a preto esse quadrado v
+22. Agora fora da initialize  v
+23. Daqui para a frente todos os cliques são eventos v
+24. Quando escolhemos Atacar devemos guardar os disparos e os barcos v
+25. Devemos criar um ficheiro AtacarA.fxml com uma Gridpane 14×14 v
+26. Devemos acrescentar o botão voltar atràs caso queiramos voltar para o BatalhaJogadorA.fxml v
+27. Pôr o ficheiro AtacarControllerA.java como controlador v
+28. No initialize recebe-se os barcos todos  e as  ArrayLists de posições atingidas
+29. No caso de estar intocada a célula é azul de border preta  v
+30. No caso de termos falhado a célula é branca de border preta v
+31. No caso de termos acertado a célula é vermelha de border branca v
+32. No caso de ser afundado as células serão rosas com as letras do Barco correspondentes capitalizadas a preto e border preta v
+33. Agora fora do initialize v
+34. Criar a função onClickVoltar v
+35. Associà-la ao botão Voltar v
+36. Daqui para a frente todos os cliques são eventos
+37. Ao clicar numa célula que seja normal isto é cujas coordenadas não estão presentes
+ no ArrayList de danos que armazena os duplos deve haver uma mensagem que pede confirmação
+  do ataque(usar JPane ou JAlert por exemplo) v
+
+38. No caso do ataque devemos guardar na ArrayList criada no BatalhaB.java a posição
+ que foi escolhida como ataque verificar se esta é um barco v
+
+39. Modificar a função evento para encher a ArrayList dos Barcos
+ de triplos com coordenadas e booleanos para ver se estão abatidos v
+
+40. No caso de todos os barcos do B estarem afundados deve-se dar como vencedor o A
+ e usa-se a view vitória.fxml com o nome inicialmente introduzido v 
+
+41. No caso de não haver vitória passar a view para BatalhaJogadorB.fxml v
+
+42. Se não for uma célula intocada nada deve acontecer e o clique é ignorado v
+
+43. Repetir o processo na classe BatalhaJogadorB.fxml v
+
+E1. Criar caso especial de porta aviões (*Por agora ignorar*)
+E2. Criar função remover barco

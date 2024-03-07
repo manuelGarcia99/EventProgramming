@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ficha5b.HelloController">
+   <bottom>
+      <AnchorPane prefHeight="49.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToggleButton fx:id="circle" contentDisplay="GRAPHIC_ONLY" layoutX="364.0" layoutY="1.0" mnemonicParsing="false" selected="true" text="ToggleButton" wrapText="true">
+               <graphic>
+                  <Circle fill="WHITE" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
+               </graphic>
+               <toggleGroup>
+                  <ToggleGroup fx:id="formas" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="square" contentDisplay="GRAPHIC_ONLY" layoutX="440.0" layoutY="1.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="70.0" text="ToggleButton" toggleGroup="$formas">
+               <graphic>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+               </graphic>
+            </ToggleButton>
+            <ToggleButton fx:id="triangle" contentDisplay="GRAPHIC_ONLY" layoutX="517.0" mnemonicParsing="false" text="ToggleButton" toggleGroup="$formas">
+               <graphic>
+                  <Polygon fill="WHITE" points="55.60003662109375, -20.000030517578125, 24.4000244140625, -68.59976959228516, -5.79998779296875, -20.000030517578125" stroke="BLACK" strokeType="INSIDE" />
+               </graphic>
+            </ToggleButton>
+            <Spinner fx:id="spinner" layoutX="245.0" layoutY="16.0" prefHeight="26.0" prefWidth="108.0" />
+            <ColorPicker fx:id="colorPicker" layoutX="108.0" layoutY="17.0">
+               <value>
+                  <Color />
+               </value>
+            </ColorPicker>
+            <Button fx:id="button" layoutX="33.0" layoutY="17.0" mnemonicParsing="false" onMouseReleased="#limpaTela" prefHeight="26.0" prefWidth="61.0" text="Clear" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <Region prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </Region>
+   </center>
+</BorderPane>

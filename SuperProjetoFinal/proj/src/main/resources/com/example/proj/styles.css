@@ -1,0 +1,6 @@
+
+
+ .grid-pane .cell {
+    -fx-border-color: white;
+    -fx-background-color : black;
+}

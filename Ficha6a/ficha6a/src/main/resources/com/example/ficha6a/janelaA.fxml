@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="344.0" prefWidth="600.0" style="-fx-background-color: #30D5C8;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ficha6a.HelloController">
+   <center>
+      <Button onMouseReleased="#onclick" fx:id="buttonNext" mnemonicParsing="false" text="Next" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="15.0" left="250.0" right="250.0" top="15.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets left="25.0" right="25.0" />
+         </BorderPane.margin>
+      </Button>
+   </center>
+   <top>
+      <AnchorPane prefHeight="137.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="igual" layoutX="383.0" layoutY="74.0" text="?" />
+            <Label fx:id="operador" layoutX="212.0" layoutY="74.0" text="?" />
+            <TextField fx:id="numero1" layoutX="110.0" layoutY="70.0" maxWidth="50.0" />
+            <TextField fx:id="numero2" layoutX="275.0" layoutY="70.0" maxWidth="50.0" />
+            <TextField fx:id="resultado" layoutX="439.0" layoutY="70.0" maxWidth="50.0" AnchorPane.rightAnchor="110.60000000000002" AnchorPane.topAnchor="70.0" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <Label fx:id="score" style="-fx-background-color: yellow;" text="0 Points" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="15.0" left="25.0" right="25.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="15.0" left="250.0" right="250.0" top="15.0" />
+         </padding>
+      </Label>
+   </bottom>
+</BorderPane>

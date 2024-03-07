@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="317.0" prefWidth="602.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aron.HelloController">
+   <children>
+      <HBox prefHeight="200.0" prefWidth="382.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="225.0" fitWidth="300.0" pickOnBounds="true" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="40.0" top="40.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../../../imagemDaFormula.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox prefHeight="318.0" prefWidth="218.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="a = ?" textFill="#ddff00">
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="numA">
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="105.0" prefWidth="235.0">
+               <children>
+                  <Label text="b = ?" textFill="#d0ff00">
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="numB">
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="79.0" prefWidth="218.0">
+               <children>
+                  <Label text="c = ?" textFill="#d0ff00" />
+                  <TextField fx:id="numC" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="79.0">
+               <children>
+                  <Button id="calc" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onHelloButtonClick" prefHeight="26.0" prefWidth="156.0" text="Calcular">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Area :" textFill="#d0ff00" />
+                  <TextField fx:id="area" editable="false" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

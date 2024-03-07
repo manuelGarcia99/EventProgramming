@@ -1,0 +1,11 @@
+.grid-pane > *:nth-child(1) {
+    -fx-background-color: red;
+}
+
+.grid-pane > *:nth-child(2) {
+    -fx-background-color: green;
+}
+
+.grid-pane > *:nth-child(3) {
+    -fx-background-color: blue;
+}
